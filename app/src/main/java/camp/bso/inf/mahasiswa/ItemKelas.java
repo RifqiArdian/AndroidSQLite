@@ -9,7 +9,9 @@ public class ItemKelas {
     private String MatKul;
     private String Kelas;
 
-    public ItemKelas() {}
+    public ItemKelas() {
+
+    }
 
 
     public int getmId() {

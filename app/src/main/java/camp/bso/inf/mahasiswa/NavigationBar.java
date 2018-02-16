@@ -86,10 +86,10 @@ public class NavigationBar extends AppCompatActivity
             Intent i =  new Intent(NavigationBar.this,Mahasiswa.class);
             startActivity(i);
         } else if (id == R.id.nav_gallery) {
-            Intent i =  new Intent(NavigationBar.this,Kelas.class);
+            Intent i =  new Intent(NavigationBar.this,ListKelas.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
-            Intent i =  new Intent(NavigationBar.this,Dosen.class);
+            Intent i =  new Intent(NavigationBar.this,ListDosen.class);
             startActivity(i);
         } else if (id == R.id.nav_manage) {
             Intent i =  new Intent(NavigationBar.this,InformasiAplikasi.class);

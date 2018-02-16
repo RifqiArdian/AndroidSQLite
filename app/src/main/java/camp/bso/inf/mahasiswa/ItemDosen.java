@@ -13,14 +13,17 @@ public class ItemDosen {
 
 
     public int getmId() {
+
         return mId;
     }
 
     public void setmId(int mId) {
+
         this.mId = mId;
     }
 
     public String getNip() {
+
         return Nip;
     }
 
@@ -29,10 +32,12 @@ public class ItemDosen {
     }
 
     public String getNama() {
+
         return Nama;
     }
 
-    public void setNama(String Nama) {
+    public void setNama(
+            String Nama) {
         this.Nama = Nama;
     }
 }
