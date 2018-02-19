@@ -107,9 +107,9 @@ public class DosenListOpenHelper extends SQLiteOpenHelper {
     }
 
     /**
-     * Gets the number of rows in the word list table.
+     * Gets the number of rows in the dosen list table.
      *
-     * @return The number of entries in WORD_LIST_TABLE.
+     * @return The number of entries in DOSEN_LIST_TABLE.
      */
     public long count() {
         if (mReadableDB == null) {mReadableDB = getReadableDatabase();}

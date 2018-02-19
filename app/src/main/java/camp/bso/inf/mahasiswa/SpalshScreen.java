@@ -21,7 +21,7 @@ public class SpalshScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SpalshScreen.this, NavigationBar.class);
+                Intent i = new Intent(SpalshScreen.this, NavBar.class);
                 startActivity(i);
                 // close activity
                 finish();

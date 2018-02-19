@@ -1,15 +1,20 @@
 package camp.bso.inf.mahasiswa;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.LinkedList;
 
 public class ListDosen extends AppCompatActivity {
+    Button btnListKelas;
+    Button btnListMahasiswa;
+    Button btnBack;
 
     private final LinkedList<String> mDosenListNip = new LinkedList<>();
     private final LinkedList<String> mDosenListNama = new LinkedList<>();
@@ -25,6 +30,33 @@ public class ListDosen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_dosen);
+
+        btnListKelas = findViewById(R.id.btnListKelas);
+        btnListKelas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ListDosen.this,ListKelas.class);
+                startActivity(i);
+            }
+        });
+
+        btnListMahasiswa = findViewById(R.id.btnListMahasiswa);
+        btnListMahasiswa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ListDosen.this,Mahasiswa.class);
+                startActivity(i);
+            }
+        });
+
+        btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ListDosen.this,NavBar.class);
+                startActivity(i);
+            }
+        });
 
         mDB = new DosenListOpenHelper(this);
 

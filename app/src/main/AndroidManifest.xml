@@ -17,16 +17,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".Mahasiswa" />
-        <activity android:name=".Kelas" />
-        <activity android:name=".Dosen" />
         <activity android:name=".InformasiAplikasi" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ListDosen" />
         <activity android:name=".ListKelas" />
         <activity
-            android:name=".NavigationBar"
-            android:label="@string/title_activity_navigation_bar"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".NavBar"
+            android:label="@string/title_activity_nav_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BuatBiodata"
+            android:label="@string/title_activity_buatbiodata">
+        </activity>
+        <activity android:name=".LihatBiodata"
+            android:label="@string/title_activity_lihatbiodata">
+        </activity>
+        <activity android:name=".UpdateBiodata"
+            android:label="@string/title_activity_updatebiodata">
+        </activity>
     </application>
 
 </manifest>

@@ -26,7 +26,7 @@ public class KelasListAdapter extends RecyclerView.Adapter<KelasListAdapter.Kela
 
     @Override
     public KelasListAdapter.KelasViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View mItemView = mInflater.inflate(R.layout.item_dosen, parent, false);
+        View mItemView = mInflater.inflate(R.layout.item_kelas, parent, false);
         return new KelasListAdapter.KelasViewHolder(mItemView, this);
     }
 

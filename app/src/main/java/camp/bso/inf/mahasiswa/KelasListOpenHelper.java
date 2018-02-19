@@ -19,8 +19,8 @@ public class KelasListOpenHelper extends SQLiteOpenHelper{
 
     // Versions has to be 1 first time or app will crash.
     private static final int DATABASE_VERSION = 1;
-    private static final String KELAS_LIST_TABLE = "kelas";
-    private static final String DATABASE_NAME = "univ_list";
+    private static final String KELAS_LIST_TABLE = "class";
+    private static final String DATABASE_NAME = "univ_list2";
 
     // Column names...
     public static final String KEY_ID = "_id";
@@ -107,9 +107,9 @@ public class KelasListOpenHelper extends SQLiteOpenHelper{
     }
 
     /**
-     * Gets the number of rows in the word list table.
+     * Gets the number of rows in the kelas list table.
      *
-     * @return The number of entries in WORD_LIST_TABLE.
+     * @return The number of entries in KELAS_LIST_TABLE.
      */
     public long count() {
         if (mReadableDB == null) {mReadableDB = getReadableDatabase();}
