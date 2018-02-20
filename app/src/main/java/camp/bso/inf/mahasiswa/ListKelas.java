@@ -12,8 +12,6 @@ import android.widget.Button;
 import java.util.LinkedList;
 
 public class ListKelas extends AppCompatActivity {
-    Button btnListDosen;
-    Button btnListMahasiswa;
     Button btnBack;
 
     private final LinkedList<String> mKelasListMatkul = new LinkedList<>();
@@ -31,30 +29,13 @@ public class ListKelas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_kelas);
 
-        btnListDosen = findViewById(R.id.btnListDosen);
-        btnListDosen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(ListKelas.this,ListDosen.class);
-                startActivity(i);
-            }
-        });
-
-        btnListMahasiswa = findViewById(R.id.btnListMahasiswa);
-        btnListMahasiswa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(ListKelas.this,Mahasiswa.class);
-                startActivity(i);
-            }
-        });
-
-        btnBack = findViewById(R.id.btnBack);
+        btnBack = (Button) findViewById(R.id.button1);
         btnBack.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Intent i = new Intent(ListKelas.this,NavBar.class);
-                startActivity(i);
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+                finish();
             }
         });
 

@@ -21,11 +21,22 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         style="?android:attr/borderlessButtonStyle"
         android:drawableLeft="@drawable/icon_add"
-        android:text="Buat Biodata Baru"
+        android:text="Buat Data Baru"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Kembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/button2"
+        android:layout_alignParentRight="true"
+
+        />
 </RelativeLayout>

@@ -19,6 +19,7 @@ public class Mahasiswa extends AppCompatActivity {
     String[] daftar;
     ListView ListView01;
     Menu menu;
+    Button btnBack;
     protected Cursor cursor;
     DataHelper dbcenter;
     public static Mahasiswa ma;
@@ -27,6 +28,16 @@ public class Mahasiswa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mahasiswa);
+
+        btnBack = (Button) findViewById(R.id.button1);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+                finish();
+            }
+        });
 
         Button btn=(Button)findViewById(R.id.button2);
 
